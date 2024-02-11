@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore='HardcodedText'
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/emailEditTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@id/emailEditTextLogin"
+        app:layout_constraintStart_toStartOf="@id/emailEditTextLogin"
+        app:layout_constraintTop_toBottomOf="@id/emailEditTextLogin" />
+
+    <Button
+        android:id="@+id/loginButtonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditTextLogin"
+        app:layout_constraintStart_toStartOf="@id/passwordEditTextLogin"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditTextLogin" />
+
+    <Button
+        android:id="@+id/registerButtonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Register?"
+        app:layout_constraintEnd_toEndOf="@id/loginButtonLogin"
+        app:layout_constraintStart_toStartOf="@id/loginButtonLogin"
+        app:layout_constraintTop_toBottomOf="@id/loginButtonLogin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
