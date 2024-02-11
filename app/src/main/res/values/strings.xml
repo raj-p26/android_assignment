@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Exercise 2</string>
+    <string name="home_message">Hello There! %1$s</string>
+</resources>
